@@ -1,6 +1,6 @@
 import discord
 from replit import db
-import random
+import random, os
 # import requests
 
 from keep_alive import keep_alive
@@ -118,5 +118,5 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('OTUzNjg3MDA3MTY1NTUwNjMy.YjIMPQ.rlI46LVPqwWdY6KFgVzLY9z2GDY')
+client.run(os.environ['TOKEN'])
 keep_alive()
